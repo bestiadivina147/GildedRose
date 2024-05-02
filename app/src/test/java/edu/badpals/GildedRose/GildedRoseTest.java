@@ -6,7 +6,7 @@ package edu.badpals.GildedRose;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class AppTest {
+public class GildedRoseTest {
     @Test public void appHasAGreeting() {
         GildedRose classUnderTest = new GildedRose();
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
