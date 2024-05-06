@@ -4,6 +4,7 @@
         "Updateable.java",
         "Item.java",
         "BackstagePass.java",
-        "BackstagePassTest.java"
+        "BackstagePassTest.java",
+        "AgedBrie.java"
     ]
 }
