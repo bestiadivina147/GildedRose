@@ -1,6 +1,6 @@
 package edu.badpals.GildedRose;
 
-public abstract class Item {
+public class Item {
     public String name;
 
     public int sellIn;

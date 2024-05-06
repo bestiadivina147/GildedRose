@@ -1,5 +1,7 @@
 package edu.badpals.GildedRose;
 
+import org.junit.Test;
+
 public class TexttestFixture {
     // public static void main(String[] args) {
     //     System.out.println("OMGHAI!");
@@ -33,4 +35,6 @@ public class TexttestFixture {
     //         app.updateQuality();
     //     }
     // }
+    
+
 }

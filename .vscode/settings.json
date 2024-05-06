@@ -1,5 +1,7 @@
 {
     "conventionalCommits.scopes": [
-        "NormalItem.java"
+        "NormalItem.java",
+        "Updateable.java",
+        "Item.java"
     ]
 }
