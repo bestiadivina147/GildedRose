@@ -3,6 +3,7 @@
         "NormalItem.java",
         "Updateable.java",
         "Item.java",
-        "BackstagePass.java"
+        "BackstagePass.java",
+        "BackstagePassTest.java"
     ]
 }
