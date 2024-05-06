@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "NormalItem.java",
         "Updateable.java",
-        "Item.java"
+        "Item.java",
+        "BackstagePass.java"
     ]
 }
