@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import edu.badpals.Item.NormalItem;
+
 
 public class NormalItemTest {
     @Test

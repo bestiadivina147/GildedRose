@@ -4,8 +4,6 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import edu.badpals.Item.AgedBrie;
-
 public class AgedBrieTest {
     @Test
     public void testSellInUpdate(){
