@@ -10,6 +10,7 @@
         "SulfurasTest,java",
         "ConguredItemTest.java",
         "ConguredItem.java",
-        "GildedRose.java"
+        "GildedRose.java",
+        "App.java"
     ]
 }
