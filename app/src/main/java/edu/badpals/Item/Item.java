@@ -1,4 +1,4 @@
-package edu.badpals.GildedRose;
+package edu.badpals.Item;
 
 public class Item {
     public String name;

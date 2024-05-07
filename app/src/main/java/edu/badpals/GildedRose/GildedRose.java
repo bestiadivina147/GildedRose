@@ -5,6 +5,8 @@ package edu.badpals.GildedRose;
 
 import java.util.ArrayList;
 
+import edu.badpals.Item.Updateable;
+
 public class GildedRose {
     public GildedRose() {
     }

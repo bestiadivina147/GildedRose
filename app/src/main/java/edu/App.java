@@ -1,4 +1,11 @@
-package edu.badpals.GildedRose;
+package edu;
+
+import edu.badpals.GildedRose.GildedRose;
+import edu.badpals.Item.AgedBrie;
+import edu.badpals.Item.BackstagePass;
+import edu.badpals.Item.ConjuredItem;
+import edu.badpals.Item.NormalItem;
+import edu.badpals.Item.Sulfuras;
 
 public class App {
     public static void main(String[] args) {

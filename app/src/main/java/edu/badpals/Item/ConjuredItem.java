@@ -1,4 +1,4 @@
-package edu.badpals.GildedRose;
+package edu.badpals.Item;
 
 public class ConjuredItem extends Item implements Updateable {
 

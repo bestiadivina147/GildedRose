@@ -1,8 +1,10 @@
-package edu.badpals.GildedRose;
+package edu.badpals.Item;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import edu.badpals.Item.AgedBrie;
 
 public class AgedBrieTest {
     @Test

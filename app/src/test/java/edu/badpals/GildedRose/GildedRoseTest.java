@@ -8,6 +8,12 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
+import edu.badpals.Item.AgedBrie;
+import edu.badpals.Item.BackstagePass;
+import edu.badpals.Item.ConjuredItem;
+import edu.badpals.Item.NormalItem;
+import edu.badpals.Item.Sulfuras;
+
 public class GildedRoseTest {
     private static GildedRose shop;
 
