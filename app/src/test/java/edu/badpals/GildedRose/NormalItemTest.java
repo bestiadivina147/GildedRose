@@ -29,5 +29,25 @@ public class NormalItemTest {
         normal.update_quality();
         assertEquals(18, normal.getQuality());
     }
+    @Test
+    public void testQualityEqualsOneNegativeSellIn(){
+        NormalItem normal = new NormalItem("+5 Dexterity Vest", -1, 1);
+        normal.update_quality();
+        assertEquals(0,normal.getQuality());
+    }
+
+    @Test
+    public void testQualityEqualsZero(){
+        NormalItem normal = new NormalItem("+5 Dexterity Vest", 10, 0);
+        normal.update_quality();
+        assertEquals(0,normal.getQuality());
+    }
+
+    @Test
+    public void testQualityEqualsZeroNegativeSellIn(){
+        NormalItem normal = new NormalItem("+5 Dexterity Vest", -1, 0);
+        normal.update_quality();
+        assertEquals(0,normal.getQuality());
+    }
     
 }
