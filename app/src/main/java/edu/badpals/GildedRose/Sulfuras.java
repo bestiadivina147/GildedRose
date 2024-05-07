@@ -18,7 +18,7 @@ public class Sulfuras extends Item implements Updateable {
 
     @Override
     public void update_item() {
-        throw new UnsupportedOperationException("El sellIn de este item no se modifica siempre es igual'");
+        
     }
 
     @Override
