@@ -5,6 +5,8 @@
         "Item.java",
         "BackstagePass.java",
         "BackstagePassTest.java",
-        "AgedBrie.java"
+        "AgedBrie.java",
+        "Sulfuras.java",
+        "SulfurasTest,java"
     ]
 }
