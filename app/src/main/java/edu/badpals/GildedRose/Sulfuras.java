@@ -18,12 +18,13 @@ public class Sulfuras extends Item implements Updateable {
 
     @Override
     public void update_item() {
-        this.sellIn = this.sellIn - 1;
+        throw new UnsupportedOperationException("El sellIn de este item no se modifica siempre es igual'");
     }
 
     @Override
     public void update_quality() {
-        throw new UnsupportedOperationException("La calidad de este item no se modifica siempre es 80'");
+        this.quality = 80;
+        
     }
     
 }
