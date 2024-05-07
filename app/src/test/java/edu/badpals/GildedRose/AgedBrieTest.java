@@ -29,4 +29,14 @@ public class AgedBrieTest {
         brie.update_quality();
         assertEquals(22, brie.getQuality());
     }
+    public void testQualityMasCincuenta(){
+        AgedBrie brie = new AgedBrie("AgedBrie", 0, 50);
+        brie.update_quality();
+        assertEquals(50, brie.getQuality());
+    }
+    public void testQualityMasCincuenta1(){
+        AgedBrie brie = new AgedBrie("AgedBrie", -7, 50);
+        brie.update_quality();
+        assertEquals(50, brie.getQuality());
+    }
 }
