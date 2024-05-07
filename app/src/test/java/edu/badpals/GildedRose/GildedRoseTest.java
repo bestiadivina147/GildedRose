@@ -3,15 +3,55 @@
  */
 package edu.badpals.GildedRose;
 
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class GildedRoseTest {
-    // @Test
-    // void foo() {
-    //     Item[] items = new Item[] { new Item("foo", 0, 0) };
-    //     GildedRose app = new GildedRose(items);
-    //     app.updateQuality();
-    //     assertEquals("fixme", app.items[0].name);
-    // }
+    private static GildedRose shop;
+
+    @Before
+    public void createList(){
+
+        shop = new GildedRose();
+
+        ConjuredItem conjuredItem = new ConjuredItem("ConjuredItem",10,10);
+        BackstagePass backstagePass = new BackstagePass("BackstagePass",10,10);
+        NormalItem normalItem = new NormalItem("NormalItem",10,10);
+        Sulfuras sulfuras = new Sulfuras("Sulfuras",0,20);
+        AgedBrie agedBrie = new AgedBrie("AgedBrie",10,10);
+
+        shop.addItem(conjuredItem);
+        shop.addItem(backstagePass);
+        shop.addItem(normalItem);
+        shop.addItem(sulfuras);
+        shop.addItem(agedBrie);
+    }
+
+    @Test
+    public void testAddItem() {
+
+        ConjuredItem conjuredItem = new ConjuredItem("ConjuredItem",10,10);
+        shop.addItem(conjuredItem);
+        assertEquals(6, shop.getStock().size());
+    }
+
+    @Test
+    public void testUpdateItems(){
+
+        shop.updateItems();
+        assertEquals(8,shop.getStock().get(0).getQuality());
+        assertEquals(9,shop.getStock().get(0).getSellIn());
+
+    }
+
+    @Test
+    public void testUpdateSulfuras(){
+
+        shop.updateItems();
+        assertEquals(80,shop.getStock().get(3).getQuality());
+        assertEquals(0,shop.getStock().get(3).getSellIn());
+
+    }
 }

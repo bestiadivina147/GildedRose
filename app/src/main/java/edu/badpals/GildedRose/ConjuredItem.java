@@ -1,8 +1,8 @@
 package edu.badpals.GildedRose;
 
-public class ConguredItem extends Item implements Updateable {
+public class ConjuredItem extends Item implements Updateable {
 
-    public ConguredItem(String name, int sellIn, int quality) {
+    public ConjuredItem(String name, int sellIn, int quality) {
         super(name, sellIn, quality);
     }
 
