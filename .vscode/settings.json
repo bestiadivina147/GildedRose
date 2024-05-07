@@ -1,0 +1,16 @@
+{
+    "conventionalCommits.scopes": [
+        "NormalItem.java",
+        "Updateable.java",
+        "Item.java",
+        "BackstagePass.java",
+        "BackstagePassTest.java",
+        "AgedBrie.java",
+        "Sulfuras.java",
+        "SulfurasTest,java",
+        "ConguredItemTest.java",
+        "ConguredItem.java",
+        "GildedRose.java",
+        "App.java"
+    ]
+}

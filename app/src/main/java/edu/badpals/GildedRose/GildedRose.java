@@ -3,12 +3,42 @@
  */
 package edu.badpals.GildedRose;
 
+import java.util.ArrayList;
+
+import edu.badpals.Item.Updateable;
+
 public class GildedRose {
-    public String getGreeting() {
-        return "Hello World!";
+    public GildedRose() {
     }
 
-    public static void main(String[] args) {
-        System.out.println(new GildedRose().getGreeting());
+    private final ArrayList<Updateable> stock = new ArrayList<>();
+
+    public ArrayList<Updateable> getStock() {
+        return stock;
+    }
+
+    public void addItem(Updateable item) {
+        stock.add(item);
+    }
+
+    public void updateItems(){
+
+        for (Updateable item: stock){
+            item.update_quality();
+            item.update_item();
+            
+        }
+    }
+
+    @Override
+    public String toString(){
+
+        String stringConcatenation = "";
+
+        for (Updateable item: stock){
+
+            stringConcatenation += item.toString() + "\n";
+        }
+        return stringConcatenation;
     }
 }
