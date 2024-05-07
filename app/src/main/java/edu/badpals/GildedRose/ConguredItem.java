@@ -4,31 +4,30 @@ public class ConguredItem extends Item implements Updateable {
 
     public ConguredItem(String name, int sellIn, int quality) {
         super(name, sellIn, quality);
-        //TODO Auto-generated constructor stub
-    }
-
-    @Override
-    public void update_item() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'update_item'");
-    }
-
-    @Override
-    public void update_quality() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'update_quality'");
     }
 
     @Override
     public int getQuality() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getQuality'");
+        return this.quality;
     }
 
     @Override
     public int getSellIn() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getSellIn'");
+        return this.sellIn;
+    }
+
+    @Override
+    public void update_item() {
+        this.sellIn = this.sellIn - 1;
+    }
+    
+    @Override
+    public void update_quality() {
+        if(this.sellIn>=0){
+            this.quality = this.quality -2;
+        }else if(this.sellIn<0){
+            this.quality = this.quality -4;
+        }
     }
     
 }

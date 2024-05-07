@@ -8,6 +8,7 @@
         "AgedBrie.java",
         "Sulfuras.java",
         "SulfurasTest,java",
-        "ConguredItemTest.java"
+        "ConguredItemTest.java",
+        "ConguredItem.java"
     ]
 }
