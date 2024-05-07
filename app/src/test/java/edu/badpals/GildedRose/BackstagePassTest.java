@@ -50,4 +50,19 @@ public class BackstagePassTest {
         pass.update_quality();
         assertEquals(0, pass.getQuality());
     }
+    public void testQualityMasCincuenta(){
+        BackstagePass pass = new BackstagePass("BackstagePass", 30, 50);
+        pass.update_quality();
+        assertEquals(50, pass.getQuality());
+    }
+    public void testQualityMasCincuenta1(){
+        BackstagePass pass = new BackstagePass("BackstagePass", 7, 50);
+        pass.update_quality();
+        assertEquals(50, pass.getQuality());
+    }
+    public void testQualityMasCincuenta2(){
+        BackstagePass pass = new BackstagePass("BackstagePass", 3, 50);
+        pass.update_quality();
+        assertEquals(50, pass.getQuality());
+    }
 }

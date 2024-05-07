@@ -24,12 +24,15 @@ public class BackstagePass extends Item implements Updateable {
     public void update_quality() {
         if(this.sellIn > 10){
             this.quality = this.quality + 1;
-        }else if(5 < this.sellIn && this.sellIn <= 10){
+        }else if(5 < this.sellIn){
             this.quality = this.quality + 2;
-        }else if(0 <= this.sellIn && this.sellIn <= 5){
+        }else if(0 <= this.sellIn){
             this.quality = this.quality + 3;
         }else if(0 > this.sellIn){
             this.quality = 0;
+        }
+        if (this.quality > 50) {
+            this.quality = 50;
         }
     }
 
